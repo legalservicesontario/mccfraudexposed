@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Join the Class — Mortgage Centre Class Action</title>
+  <style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:20px auto;padding:0 12px;} header{background:#0b3d91;color:#fff;padding:16px;} label{display:block;margin-top:8px;} input, textarea, select{width:100%;padding:8px;margin-top:6px;border:1px solid #ccc;border-radius:6px;} .btn{background:#0b3d91;color:#fff;padding:10px 14px;border-radius:6px;text-decoration:none;display:inline-block;border:none;}</style>
+</head>
+<body>
+  <header><h1>Join the Class</h1></header>
+  <main>
+    <p>Please complete the form below if you believe you may be a Class Member. <strong>Do not upload unredacted personal information to public pages.</strong> If you have sensitive documents, follow the contact instructions for secure submission.</p>
+
+    <form id="joinForm" method="POST" action="https://formspree.io/f/myzdrwlw"
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="license">Mortgage Agent Licence Number (if applicable)</label>
+      <input type="text" id="license" name="license">
+
+      <label for="brokerage">Brokerage / Franchise (e.g., iBrokerPower / The Mortgage Centre)</label>
+      <input type="text" id="brokerage" name="brokerage">
+
+      <label for="period">Approx. period worked (start year — end year)</label>
+      <input type="text" id="period" name="period">
+
+      <label for="summary">Short description of your relevant experience (deals, missing compensation, evidence you hold)</label>
+      <textarea id="summary" name="summary" rows="6"></textarea>
+
+      <label><input type="checkbox" name="join_class" value="yes"> I wish to be contacted about joining the Class Action as a Class Member.</label>
+      <label><input type="checkbox" name="updates_only" value="yes"> I only want updates/news (do not contact me about joining).</label>
+
+      <p class="small">Notes: Replace the Formspree action URL with your real form endpoint. For an internal form endpoint, change the <code>action</code> attribute. Consider using HTTPS and server-side storage for sensitive evidence.</p>
+
+      <button class="btn" type="submit">Submit</button>
+    </form>
+
+  </main>
+  <footer style="margin-top:24px;">Privacy: Submissions are intended for use in the litigation process. Do not include credit card numbers or unnecessary personal data.</footer>
+</body>
+</html>
